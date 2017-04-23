@@ -4,29 +4,74 @@
 
 {% block body %}
 
-    <h1>welcome to home page</h1>
+    <div align="right">
+
+        <a href="{{ path('homepage') }}" >back to home page</a>
+
+    </div>
+<hr>
+
+    <h1>Welcome to my Recipe Manager</h1>      <h1> Selamat Datang</h1>
+    <h2> 欢迎光临 </h2>
 
     <hr>
-    <ul>
 
-        <li>
-            <a href="{{ path('homepage') }}">back to home page</a>
-        </li>
-
-        <li>
-            <a hrer="http://symfony.com/doc/current/page_creation.html">getting started (on the Symfony website)</a>
-        </li>
-    </ul>
 
 
 
     <p>
-        I am the home page ...
+        You can learn to use the recipes and make different foods.<br>
+        Please click on the recipe below and read the description.
 
     </p>
 
     <hr>
 
+    <h2>List of Ingredients</h2>
+    <p> - Please click the ingredient below to refer the description</p>
+    <ul><a href="{{ path('yeast')}}"> Yeast </a>
+    <br>
+    <a href="{{ path('oliveoil')}}"> Olive Oil</a>
+        <br>
+        <a href="{{ path('sugar')}}"> Sugar</a>
+        <br>
+        <a href="{{ path('flour')}}"> Flour </a>
+        <br>
+        <a href="{{ path('cornmeal')}}"> Cornmeal </a>
+        <br>
+        <a href="{{ path('tomatosauce')}}"> Tomato Sauce </a>
+        <br>
+        <a href="{{ path('mozzarellacheese')}}"> Mozzarella Cheese </a>
+        <br>
+        <a href="{{ path('parmesancheese')}}"> Parmesan Cheese </a>
+        <br>
+        <a href="{{ path('fetacheese')}}"> Feta Cheese </a>
+        <br>
+        <a href="{{ path('mushroom')}}"> Mushroom </a>
+        <br>
+        <a href="{{ path('pepper')}}"> Pepper </a>
+        <br>
+        <a href="{{ path('italiansausage')}}"> Italian Sausage </a>
+        <br>
+        <a href="{{ path('basil')}}"> Basil </a>
+        <br>
+        <a href="{{ path('pesto')}}"> Pesto </a>
+        <br>
+        <a href="{{ path('pepperoni')}}"> Pepperoni </a>
+        <br>
+        <a href="{{ path('onion')}}"> Onion </a>
+        <br>
+        <a href="{{ path('ham')}}"> Ham </a>
+        <br>
+        <a href="{{ path('beef')}}"> Beef </a>
+
+    </ul>
+    <hr>
+
+    <a href="{{ path('cookpizza')}}"> How to make a Pizza ? </a>
+    <br>
+    <a href="{{ path('cooklasagna')}}"> How to make a Lasagna ? </a>
+    <hr>
     {{ dump() }}
 {% endblock %}
 

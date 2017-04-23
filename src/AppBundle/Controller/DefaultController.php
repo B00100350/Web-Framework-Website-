@@ -21,7 +21,7 @@ class DefaultController extends Controller
     public function indexAction(Request $request)
     {
         $argsArray =  [
-            'name' => 'matt'
+            'name' => 'Sean'
         ];
 
         $templateName = 'index';

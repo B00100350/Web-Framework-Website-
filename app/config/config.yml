@@ -46,8 +46,8 @@ doctrine:
         host:     "%database_host%"
         port:     "%database_port%"
         dbname:   "%database_name%"
-        user:     "seanchan91"
-        password: "Sean@@1991"
+        user:     "%database_user%"
+        password: "%database_password%"
         charset:  UTF8
         # if using pdo_sqlite as your database driver:
         #   1. add the path in parameters.yml

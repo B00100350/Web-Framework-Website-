@@ -36,8 +36,11 @@ class StudentController extends Controller
      *
      * @return \Symfony\Component\HttpFoundation\RedirectResponse
      */
-    public function createAction(Student $student)
+    public function createAction(Student $name)
     {
+        $student = new Student();
+        $student->setName($name);
+
         // entity manager
         $em = $this->getDoctrine()->getManager();
 
@@ -47,7 +50,8 @@ class StudentController extends Controller
         // actually executes the queries (i.e. the INSERT query)
         $em->flush();
 
-        return $this->redirectToRoute('students_list');
+       // return $this->redirectToRoute('students_list');
+        return new Response('Created new student with id'.$student->getId);
     }
 
     /**

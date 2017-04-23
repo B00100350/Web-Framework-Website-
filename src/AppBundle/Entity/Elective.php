@@ -125,4 +125,3 @@ class Elective
         return $this->credits;
     }
 }
-
